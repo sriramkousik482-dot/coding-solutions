@@ -83,7 +83,7 @@ Therefore, the required sum is `0`.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T13:42:34.703Z  
+**Submitted:** 2026-09-07T13:45:09.296Z  
 
 ```py
 # cook your dish here
@@ -91,12 +91,9 @@ n,k=map(int,input().split())
 arr=list(map(int,input().split()))
 sum=0
 for i in range(0,n,2):
-    if arr[i]>=2*k:
-        sum+=1
-    else:
-        print(0)
-    print(sum)
-        
+    if arr[i]>2*k:
+        sum+=arr[i]
+print(sum)
 ```
 
 ---
