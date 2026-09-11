@@ -68,18 +68,20 @@ Since $550 < 600$, the answer is `NO`
 
 ## Solution
 
-**Language:** Python  
+**Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T13:36:38.517Z  
+**Submitted:** 2026-09-11T14:31:41.460Z  
 
-```py
-# cook your dish here
-a,b,x=map(int,input().split())
-if a+b>=x:
-    print('YES')
-else:
-    print('NO')
+```c_cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+
+}
+
 ```
 
 ---
