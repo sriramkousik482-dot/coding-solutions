@@ -37,8 +37,8 @@ Output: ["h","a","n","n","a","H"]
 
 **Language:** Python  
 **Runtime:** 0 ms  
-**Memory:** 19.3 MB  
-**Submitted:** 2026-09-12T14:26:54.103Z  
+**Memory:** 19.4 MB  
+**Submitted:** 2026-09-12T14:27:10.436Z  
 
 ```py
 class Solution:
@@ -48,7 +48,7 @@ class Solution:
         if left <right:
             s[left],s[right]=s[right],s[left]
             left+=1
-            right-=1
+            right+=1
 
 
         
