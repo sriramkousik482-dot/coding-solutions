@@ -1,10 +1,11 @@
 # cook your dish here
 n=int(input())
+median=0
 arr=list(map(int,input().split()))
-median=arr[0]+arr[n-1]//2
-if median%2==0:
+mid=arr[0]+arr[n-1]//2
+if mid%2==0:
     print(median)
-elif median%2=0:
-    print(min(arr))
+elif median<mid:
+    print(arr[n//2-1])
 else:
-    print()
+    print("none")
