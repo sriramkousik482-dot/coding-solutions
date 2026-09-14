@@ -66,11 +66,19 @@ Seats $3$ and $7$ are both $2$ units away from the center. Choose seat $3$ becau
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T15:45:13.681Z  
+**Submitted:** 2026-09-14T15:53:27.052Z  
 
 ```py
 # cook your dish here
-
+n=int(input())
+arr=list(map(int,input().split()))
+median=arr[0]+arr[n-1]//2
+if median%2==0:
+    print(median)
+elif median%2=0:
+    print(min(arr))
+else:
+    print()
 ```
 
 ---
