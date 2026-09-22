@@ -47,18 +47,18 @@ The array has one each of 0, 1, and 2, arranged in-place in the order 0, 1, 2.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 7 ms (beats 2.39%)  
+**Runtime:** 5 ms (beats 2.39%)  
 **Memory:** 19.4 MB (beats 24.27%)  
-**Submitted:** 2026-09-22T15:08:27.853Z  
+**Submitted:** 2026-09-22T15:10:11.591Z  
 
 ```py
 class Solution:
     def sortColors(self, nums: list[int]) -> None:
         n=len(nums)
-        for j in range(n):
-            for i in range(1,n):
-                if nums[i]<nums[i-1]:
-                    nums[i],nums[i-1]=nums[i-1],nums[i]
+        for i in range(n):
+            for j in range(1,n):
+                if nums[j]<nums[j-1]:
+                    nums[j],nums[j-1]=nums[j-1],nums[j]
         print(*nums)
             
 
