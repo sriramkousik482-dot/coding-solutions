@@ -1,0 +1,71 @@
+# Longest Substring Without Repeating Characters
+
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
+
+## Problem
+
+Given a string `s`, find the length of the  **longest**   **substring**  without duplicate characters.
+
+ 
+
+ **Example 1:** 
+
+```
+Input: s = "abcabcbb"
+Output: 3
+Explanation: The answer is "abc", with the length of 3. Note that "bca" and "cab" are also correct answers.
+
+```
+
+ **Example 2:** 
+
+```
+Input: s = "bbbbb"
+Output: 1
+Explanation: The answer is "b", with the length of 1.
+
+```
+
+ **Example 3:** 
+
+```
+Input: s = "pwwkew"
+Output: 3
+Explanation: The answer is "wke", with the length of 3.
+Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
+
+```
+
+ 
+
+ **Constraints:** 
+
+- 0 <= s.length <= 105
+- s consists of English letters, digits, symbols and spaces.
+
+## Solution
+
+**Language:** Python  
+**Runtime:** 222 ms (beats 38.82%)  
+**Memory:** 19.9 MB (beats 37.10%)  
+**Submitted:** 2026-10-29T06:12:21.021Z  
+
+```py
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        i = 0
+        count = 0
+        seen = set()
+        for j in range(len(s)):
+            while s[j] in seen:
+                seen.remove(s[i])
+                i += 1
+            seen.add(s[j])
+            count = max(count, j - i + 1)
+        return count
+
+```
+
+---
+
+[View on LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
