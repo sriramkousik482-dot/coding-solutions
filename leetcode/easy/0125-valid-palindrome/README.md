@@ -48,19 +48,24 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 19.2 MB  
-**Submitted:** 2026-10-29T06:17:20.403Z  
+**Runtime:** 7 ms (beats 81.08%)  
+**Memory:** 19.5 MB (beats 92.72%)  
+**Submitted:** 2026-10-29T06:20:23.481Z  
 
 ```py
+
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        if s[0]==s[::-1]:
+        s = s.lower()
+        news = ""
+        for ch in s:
+            if ch.isalnum():
+                news += ch
+        if news == news[::-1]:
             return True
         else:
             return False
 
-                
 ```
 
 ---
