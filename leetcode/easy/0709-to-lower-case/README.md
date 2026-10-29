@@ -43,8 +43,8 @@ Output: "lovely"
 
 **Language:** Python  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 19.1 MB (beats 96.02%)  
-**Submitted:** 2026-10-25T07:16:42.344Z  
+**Memory:** 19.2 MB (beats 45.28%)  
+**Submitted:** 2026-10-29T06:05:50.370Z  
 
 ```py
 class Solution:
